@@ -6,6 +6,16 @@
 
 This project is a Django-based chatbot that uses a vector database for storing and querying text embeddings. It leverages the Ollama API for generating embeddings and the Stanza library for text processing.
 
+## Ollama Setup Instructions
+
+1. Download Ollama from [here](https://ollama.com/).
+2. Install Ollama by following the instructions provided on the download page.
+3. To pull the Llama 3.2 model, use the following command:
+    ```sh
+    ollama pull llama3.2
+    ```
+4. For other models, replace `llama3.2` with the desired model name in the command above.
+
 
 ## Setup Instructions
 
@@ -41,7 +51,6 @@ This project is a Django-based chatbot that uses a vector database for storing a
 - Implement fetching queries from the vector database (under development).
 - Complete the role of admins in deleting and uploading text files.
     - Ensure embeddings are deleted from the vector database upon file deletion.
-<<<<<<< HEAD
 
 ## Diagrammatic Processes
 - TODO 
@@ -49,5 +58,3 @@ This project is a Django-based chatbot that uses a vector database for storing a
 
 # Benchmarks
 - TODO
-=======
->>>>>>> b2cc8ae828b3fb95bbbb00073d396ec3899bddc6
