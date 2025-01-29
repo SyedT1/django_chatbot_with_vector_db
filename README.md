@@ -1,7 +1,3 @@
-# Version-1 (Easy to store, but tough to retrieve) ( EaToR )
-
-
-
 ## RAG Application
 
 This project is a Django-based chatbot that uses a vector database for storing and querying text embeddings. It leverages the Ollama API for generating embeddings and the Stanza library for text processing.
@@ -39,6 +35,11 @@ This project is a Django-based chatbot that uses a vector database for storing a
     ```sh
     python manage.py runserver
     ```
+6. Open Powershell as Administrator and run
+    ```sh
+    ollama serve
+    ```
+    
 
 ## Usage
 1. Access the chatbot interface by navigating to `http://127.0.0.1:8000` in your web browser.
@@ -48,6 +49,30 @@ This project is a Django-based chatbot that uses a vector database for storing a
 
 ## Supported File Type  
 (.txt)
+
+
+# [Latest] Version-2 (Easy to store, but tough to retrieve) ( EaToR )
+
+## Improvements
+1. User gets more accurate responses
+2. UI is more developed
+3. Persistant storage enabled by chrome_db, hence session-ends won't lose embeddings.
+
+
+
+## Limitations
+1. Late Responses
+
+
+## Interface
+![Pic 1](interface\interface_1.png)
+![Pic 2](interface\interface_2.png)
+
+
+
+
+# Version-1 (Easy to store, but tough to retrieve) ( EaToR )
+
 
 ## Todo
 - Exception and Error Handling (All modules)
