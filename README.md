@@ -1,4 +1,5 @@
 # Version-1 (Easy to store, but tough to retrieve)
+# Version-1 (Easy to store, but tough to retrieve) ইতর অ্যাপ ( EaToR )
 
 
 
@@ -41,10 +42,13 @@ This project is a Django-based chatbot that uses a vector database for storing a
 - Implement fetching queries from the vector database (under development).
 - Complete the role of admins in deleting and uploading text files.
     - Ensure embeddings are deleted from the vector database upon file deletion.
+<<<<<<< HEAD
 
 ## Diagrammatic Processes
 - TODO 
 
 
 # Benchmarks
-- TODO
+- TODO- TODO
+=======
+>>>>>>> b2cc8ae828b3fb95bbbb00073d396ec3899bddc6
