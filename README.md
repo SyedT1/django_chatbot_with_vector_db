@@ -65,8 +65,8 @@ This project is a Django-based chatbot that uses a vector database for storing a
 
 
 ## Interface
-![Pic 1](interface\interface_1.png)
-![Pic 2](interface\interface_2.png)
+![Pic 1](interface/interface_1.png)
+![Pic 2](interface/interface_2.png)
 
 
 
