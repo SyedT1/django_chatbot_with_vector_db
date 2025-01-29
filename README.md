@@ -1,4 +1,4 @@
-# django_chatbot_with_vector_db
+# Version-1 (Easy to store, but tough to retrieve)
 
 ## RAG Application
 
