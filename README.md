@@ -1,5 +1,7 @@
 # Version-1 (Easy to store, but tough to retrieve)
 
+
+
 ## RAG Application
 
 This project is a Django-based chatbot that uses a vector database for storing and querying text embeddings. It leverages the Ollama API for generating embeddings and the Stanza library for text processing.
@@ -39,3 +41,10 @@ This project is a Django-based chatbot that uses a vector database for storing a
 - Implement fetching queries from the vector database (under development).
 - Complete the role of admins in deleting and uploading text files.
     - Ensure embeddings are deleted from the vector database upon file deletion.
+
+## Diagrammatic Processes
+- TODO 
+
+
+# Benchmarks
+- TODO
