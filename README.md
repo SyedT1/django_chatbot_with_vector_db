@@ -1,2 +1,42 @@
 # django_chatbot_with_vector_db
- # RAG Application
+
+## RAG Application
+
+This project is a Django-based chatbot that uses a vector database for storing and querying text embeddings. It leverages the Ollama API for generating embeddings and the Stanza library for text processing.
+
+
+## Setup Instructions
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/SyedT1/django_chatbot_with_vector_db.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd django_chatbot_with_vector_db
+    ```
+3. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+4. Set up the database:
+    ```sh
+    python manage.py migrate
+    ```
+5. Run the development server:
+    ```sh
+    python manage.py runserver
+    ```
+
+## Usage
+
+1. Access the chatbot interface by navigating to `http://127.0.0.1:8000` in your web browser.
+2. Interact with the chatbot by typing your queries in the input box and pressing enter.
+3. The chatbot will respond based on the text embeddings stored in the vector database.
+
+# Todo
+- Create diagrammatic representations of the processes.
+- Include diagrams in every version to show the state of development.
+- Implement fetching queries from the vector database (under development).
+- Complete the role of admins in deleting and uploading text files.
+    - Ensure embeddings are deleted from the vector database upon file deletion.
