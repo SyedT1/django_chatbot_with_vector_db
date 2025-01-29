@@ -50,6 +50,9 @@ This project is a Django-based chatbot that uses a vector database for storing a
 (.txt)
 
 ## Todo
+- Exception and Error Handling (All modules)
+- Memory Optimization
+- Minimization of Inference time
 - Create diagrammatic representations of the processes.
 - Include diagrams in every version to show the state of development.
 - Implement fetching queries from the vector database (under development).
