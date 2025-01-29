@@ -29,9 +29,8 @@ This project is a Django-based chatbot that uses a vector database for storing a
     ```
 
 ## Usage
-
 1. Access the chatbot interface by navigating to `http://127.0.0.1:8000` in your web browser.
-2. Interact with the chatbot by typing your queries in the input box and pressing enter.
+2. To upload text files and insert embeddings into the vector database (Chroma DB), navigate to the endpoint `http://127.0.0.1:8000/upload`.
 3. The chatbot will respond based on the text embeddings stored in the vector database.
 
 # Todo
