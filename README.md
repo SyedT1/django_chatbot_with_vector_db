@@ -1,4 +1,4 @@
-# Version-1 (Easy to store, but tough to retrieve)
+# Version-1 (Easy to store, but tough to retrieve) ইতর অ্যাপ ( EaToR )
 
 ## RAG Application
 
