@@ -1,4 +1,4 @@
-# Version-1 (Easy to store, but tough to retrieve) ইতর অ্যাপ ( EaToR )
+# Version-1 (Easy to store, but tough to retrieve) ( EaToR )
 
 
 
@@ -45,7 +45,7 @@ This project is a Django-based chatbot that uses a vector database for storing a
 2. To upload text files and insert embeddings into the vector database (Chroma DB), navigate to the endpoint `http://127.0.0.1:8000/upload`.
 3. The chatbot will respond based on the text embeddings stored in the vector database.
 
-# Todo
+## Todo
 - Create diagrammatic representations of the processes.
 - Include diagrams in every version to show the state of development.
 - Implement fetching queries from the vector database (under development).
@@ -56,5 +56,5 @@ This project is a Django-based chatbot that uses a vector database for storing a
 - TODO 
 
 
-# Benchmarks
+## Benchmarks
 - TODO
