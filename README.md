@@ -49,5 +49,3 @@ This project is a Django-based chatbot that uses a vector database for storing a
 
 # Benchmarks
 - TODO
-=======
->>>>>>> b2cc8ae828b3fb95bbbb00073d396ec3899bddc6
