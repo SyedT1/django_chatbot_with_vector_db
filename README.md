@@ -62,7 +62,8 @@ This project is a Django-based chatbot that uses a vector database for storing a
 
 ## Limitations
 1. Late Responses
-
+2. Responses should include source of the knowledge i.e text file names
+3. Include data and time
 
 ## Interface
 ![Pic 1](interface/interface_1.png)
