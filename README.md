@@ -49,9 +49,45 @@ This project is a Django-based chatbot that uses a vector database for storing a
 
 ## Supported File Type  
 (.txt)
+# [Latest] Version-3 (Easy to store, but tough to retrieve) ( EaToR )
+## Improvements
+1. Include data and time
+2. Responses should include source of the knowledge i.e text file names
 
 
-# [Latest] Version-2 (Easy to store, but tough to retrieve) ( EaToR )
+## Interface [Before finetuning] (http://127.0.0.1:8000/list_file)
+### List of uploaded files where the user can delete and update the knowledge base
+![Pic 1](interface/interface_3.png)
+
+### Initially it looks like this (http://127.0.0.1:8000/upload)
+![Pic 2](interface/interface_4.png)
+
+### Embedding Process in the background where query is embedded and the fetched embedded vector with nearest distance 
+![Pic 3](interface/interface_5.png)
+
+### The vector db is empty hence nothing significant was achieved. (http://127.0.0.1:8000/)
+![Pic 4](interface/interface_6.png)
+
+### Embedding Generation of the text files
+![Pic 5](interface/interface_7.png)
+
+
+### Uploading the same file results in rejection
+![Pic 6](interface/interface_8.png)
+
+
+### Aftermath of training a text file about Linux (10 Lines)
+![Pic 7](interface/interface_9.png)
+
+
+## Limitations
+1. Authentication incomplete for admin
+2. Slower retrieval process
+3. Text Deletion leading to embedding deletion task incomplete
+4. Many More
+
+
+#  Version-2 (Easy to store, but tough to retrieve) ( EaToR )
 
 ## Improvements
 1. User gets more accurate responses
