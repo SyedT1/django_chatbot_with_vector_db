@@ -39,6 +39,11 @@ This project is a Django-based chatbot that uses a vector database for storing a
     ```sh
     ollama serve
     ```
+
+
+## Installing Chromadb you might encounter the following error
+- error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/ 
+- [Solution is here](https://stackoverflow.com/questions/73969269/error-could-not-build-wheels-for-hnswlib-which-is-required-to-install-pyprojec)
     
 
 ## Usage
