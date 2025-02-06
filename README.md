@@ -39,7 +39,8 @@ This project is a Django-based chatbot that uses a vector database for storing a
     ```sh
     ollama serve
     ```
-
+## Setup db in mysql
+- Create a database db4ai
 
 ## Installing Chromadb you might encounter the following error
 - error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/ 
