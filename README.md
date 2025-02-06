@@ -128,8 +128,15 @@ This project is a Django-based chatbot that uses a vector database for storing a
     - Ensure embeddings are deleted from the vector database upon file deletion.
 
 ## Diagrammatic Processes
-- TODO 
+### Process --upload
+![file](diagrams\upload.jpg)
+- Incomplete
 
+### Process --query
+- TODO
+
+### Process --login
+- TODO
 
 ## Benchmarks
 - TODO
