@@ -129,7 +129,7 @@ This project is a Django-based chatbot that uses a vector database for storing a
 
 ## Diagrammatic Processes
 ### Process --upload
-![file](diagrams\upload.jpg)
+![file](diagrams\upload.png)
 - Incomplete
 
 ### Process --query
