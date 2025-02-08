@@ -32,3 +32,4 @@ uvicorn==0.34.0
 mysqlclient==2.1.0
 stanza==1.10.1
 chromadb==0.6.3
+ollama==0.4.7
