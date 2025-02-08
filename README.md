@@ -40,19 +40,21 @@ This project is a Django-based chatbot that uses a vector database for storing a
     ```sh
     pip install -r requirements.txt
     ```
-6. Set up the database:
+6. Open MySQL WorkBench and select File (top left), and then click Open SQL Script from this project titled __create_db4ai.sql__ . Execute it
+
+7. Complete Migrations:
     ```sh
     python manage.py migrate
     ```
-7. Run the development server:
+8. Run the development server:
     ```sh
     python manage.py runserver
     ```
-8. Open Powershell as Administrator and run:
+9. Open Powershell as Administrator and run:
     ```sh
     ollama serve
     ```
-## Setup db in mysql
+## Setup db in mysql (if you didnt already in point number 6)
 - Create a database db4ai
 
 ## Installing Chromadb you might encounter the following error
@@ -153,3 +155,15 @@ This project is a Django-based chatbot that uses a vector database for storing a
 
 ## Benchmarks
 - TODO
+
+## Things to work on
+### Processing text files of various sorts:
+    1. File can't be empty -> render alert on empty files and wont process
+    2. Same file name can't exist -> render alert
+    3. Same file content can't exist
+    4. Same file name and Same file content can't exist
+    5. File can't process bangla content. Presence of bangla text will generate alert
+### Embeddings:
+    1. Query must be able to capture as much as information possible
+    2. Benchmarking on various models
+    3. Embeddings similarity must be compared with various tools
