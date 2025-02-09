@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from . models import FileMetadata
-import os
 import ollama
 import uuid
 import stanza
 import chromadb
+import hashlib
 from django.conf import settings
 import re
 from transformers import pipeline
@@ -18,16 +18,21 @@ collection = client.get_or_create_collection(name="docs")
 def upload_text(request):
     if request.method == 'POST' and request.FILES.get('file'):
         file_name = request.FILES['file'].name
-        if FileMetadata.objects.filter(filename=file_name).exists():
+        text = request.FILES['file'].read().decode('utf-8')
+        m = hashlib.sha256()
+        m.update(text.encode('utf-8'))
+        file_hash = m.hexdigest() 
+        if FileMetadata.objects.filter(id=file_hash).exists():
+            return JsonResponse({'status': 'error', 'message': 'File contents already uploaded'}, status=400)
+        elif FileMetadata.objects.filter(filename=file_name).exists():
             return JsonResponse({'status': 'error', 'message': 'File already uploaded'}, status=400)
+        
         with transaction.atomic(): 
             file_metadata = FileMetadata.objects.create(
-                id=uuid.uuid4(),
+                id=file_hash,
                 filename=file_name
             )
         file_id = file_metadata.id      
-        file_name = file_metadata.filename
-        text = request.FILES['file'].read().decode('utf-8')
         nlp = stanza.Pipeline(lang='en', processors='tokenize')
         doc = nlp(text)
         for sentence in doc.sentences:
