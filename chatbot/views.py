@@ -60,6 +60,7 @@ def query_chatbot(request):
         except:
             return JsonResponse({'response': "Failure in embedding query"})
         print("hello after query embedding")
+        print(query_embedding)
         results = collection.query(
             query_embeddings=query_embedding[0],
             n_results=1
@@ -78,7 +79,7 @@ def query_chatbot(request):
 
         print("Retrieved Text:", retrieved_text)
         print("Distance:", distance)
-        if 0.50 <= distance <= 1.0:
+        if 0.50 <= distance <= 1.3:
             relevance = retrieved_text
         else:
             relevance = "I Don't Know"

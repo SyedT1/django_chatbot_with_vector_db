@@ -3,3 +3,4 @@ ollama
 stanza
 chromadb
 transformers
+mysqlclient
